@@ -10,12 +10,14 @@
         <module name="exporter" />
         <module name="deliveryplace" />
         <module name="user" />
+        <module name="operation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="deliveryplace" target="11" />
       <module name="exporter" target="11" />
       <module name="importer" target="11" />
+      <module name="operation" target="11" />
       <module name="user" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -24,6 +26,7 @@
       <module name="deliveryplace" options="-parameters" />
       <module name="exporter" options="-parameters" />
       <module name="importer" options="-parameters" />
+      <module name="operation" options="-parameters" />
       <module name="user" options="-parameters" />
     </option>
   </component>

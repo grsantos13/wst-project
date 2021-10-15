@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/exporter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/importer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/importer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/operation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/operation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/src/main/resources" charset="UTF-8" />
   </component>
