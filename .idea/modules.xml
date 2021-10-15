@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/deliveryplace/deliveryplace.iml" filepath="$PROJECT_DIR$/deliveryplace/deliveryplace.iml" />
       <module fileurl="file://$PROJECT_DIR$/exporter/exporter.iml" filepath="$PROJECT_DIR$/exporter/exporter.iml" />
       <module fileurl="file://$PROJECT_DIR$/importer/importer.iml" filepath="$PROJECT_DIR$/importer/importer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user/user.iml" filepath="$PROJECT_DIR$/user/user.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/wst-project.iml" filepath="$PROJECT_DIR$/.idea/wst-project.iml" />
     </modules>
   </component>
