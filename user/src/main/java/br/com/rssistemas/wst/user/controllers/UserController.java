@@ -11,6 +11,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import javax.transaction.Transactional;
 import javax.validation.Valid;
 import java.net.URI;
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -25,7 +26,7 @@ public class UserController {
 
     @PostMapping
     @Transactional
-    public ResponseEntity<?> create(@RequestBody @Valid NewUserRequest request, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity<UserResponse> create(@RequestBody @Valid NewUserRequest request, UriComponentsBuilder uriBuilder) {
         UserResponse userResponse = service.create(request);
         URI uri = uriBuilder.path("/users/{id}")
                 .buildAndExpand(userResponse.getId())
@@ -35,9 +36,18 @@ public class UserController {
 
     @PatchMapping("/{id}")
     @Transactional
-    public ResponseEntity<?> update(@RequestBody @Valid UpdateUserRequest request,
-                                    @PathVariable("id") UUID id) {
-
+    public ResponseEntity<UserResponse> update(@RequestBody @Valid UpdateUserRequest request,
+                                               @PathVariable("id") UUID id) {
         return ResponseEntity.ok(service.update(id, request));
+    }
+
+    @GetMapping
+    public ResponseEntity<List<UserResponse>> findAll() {
+        return ResponseEntity.ok(service.findUsers());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<UserResponse> findById(@PathVariable("id") UUID id) {
+        return ResponseEntity.ok(service.findById(id));
     }
 }
